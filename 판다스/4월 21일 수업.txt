@@ -1,0 +1,19 @@
+conda create --name test python=3.10 # 가상환경 생성
+conda create  -n test python= 3.10 # -n은 --name을 짧게 사용한것 보통 짧게 쓴건 - 하나만 붙음
+
+pip install -r requirement.txt # 버전명이 명시된 txt 폴더에 맞게 똑같이 pip가 설치됨
+
+* requirement.txt(pip freeze를 txt파일로저장한것)는 관례적으로 이렇게 명시한다.
+
+
+pip freeze # 라이브러리 버전명 리스트를 전부 보여줌
+
+pip freeze >> requirement.txt  # >>파이프라인을 통해 출력 pip freeze 한것을 requirent.txt파일로 저장!
+
+conda remove --name 가상환경이름  # 가상환경 삭제
+conda remove --name 가상환경이름 라이브러리 # 가상환경안에 해당 라이브러리 삭제
+
+conda info --envs # 콘다 환경 list 보는것
+
+<vscode>
+control +shift +p
